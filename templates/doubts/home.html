@@ -1,0 +1,142 @@
+
+{% extends "doubts/homepage.html" %}
+{% load static %}
+{% load embed_video_tags %}
+{% load crispy_forms_tags %}
+{% block body %}
+
+	  <div class="jumbotron">
+		<h1 class="display-4">Welcome {{user.username}}!!!Happy Learning</h1>
+		<p class="lead">You can change the world with your incredible results.</p>
+		<hr class="my-4">
+		<p>There is so much to learn with us.The perfect class,everytime.</p>
+		<a class="btn btn-primary btn-lg" href="{% url "courses" %}" role="button">Registered Courses</a>
+	  </div>
+
+	  <h1>Our Courses :</h1>
+
+	  <div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="inam" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							 <div class="container">
+								 <div class="row">
+									 <div class="col-sm-12 col-lg-4">
+										 <div class="card" style="width: 300px;margin: auto;">
+											 <img src="{% static 'mindnote/img/download (1).png' %}" class="card-img-top">
+											 <div class="card-body">
+												 <h4 class="card-title">Django</h4>
+												 <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus voluptas alias sed error non placeat consequuntur eum hic tempora quibusdam?</p>
+												 <button type="button" class="btn btn-warning">Read More</button>
+												 
+											 </div>
+											 
+										 </div>
+										 
+									 </div>
+									 <div class="col-sm-12 col-lg-4">
+										 <div class="card" style="width: 300px;">
+											 <img src="{% static 'mindnote/img/download (4).jpg' %}" class="card-img-top">
+											 <div class="card-body">
+												 <h4 class="card-title">CSS</h4>
+												 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus quam provident? Necessitatibus adipisci consequuntur eum ad eos labore quaerat?</p>
+												 <button type="button" class="btn btn-warning">Read More</button>
+												 
+											 </div>
+											 
+										 </div>
+										 
+									 </div>
+									 <div class="col-sm-12 col-lg-4">
+										 <div class="card" style="width: 300px;">
+											 <img src="{% static 'mindnote/img/download.png' %}" class="card-img-top">
+											 <div class="card-body">
+												 <h4 class="card-title">Class 10th CBSC</h4>
+												 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quam ab animi voluptas veniam quasi incidunt, unde iste fugit quis!</p>
+												 <button type="button" class="btn btn-warning">Read More</button>
+												 
+											 </div>
+											 
+										 </div>
+										 
+									 </div>
+									 
+								 </div>
+								 
+							 </div>
+	
+							
+						</div>
+						<div class="carousel-item">
+							 <div class="container">
+								 <div class="row">
+									 <div class="col-sm-12 col-lg-4">
+										 <div class="card" style="width: 300px;margin: auto;">
+											 <img src="{% static 'mindnote/img/download (3).jpg' %}" class="card-img-top">
+											 <div class="card-body">
+												 <h4 class="card-title">HTML</h4>
+												 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi vero nesciunt natus recusandae vitae dolorum, rerum sed adipisci dignissimos!</p>
+												 <button type="button" class="btn btn-warning">Read More</button>
+												 
+											 </div>
+											 
+										 </div>
+										 
+									 </div>
+									 <div class="col-sm-12 col-lg-4">
+										 <div class="card" style="width: 300px;">
+											 <img src="{% static 'mindnote/img/download (2).jpg' %}" class="card-img-top">
+											 <div class="card-body">
+												 <h4 class="card-title">Java</h4>
+												 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo illum necessitatibus vel quibusdam maxime quis mollitia excepturi repudiandae esse recusandae!</p>
+												 <button type="button" class="btn btn-warning">Read More</button>
+												 
+											 </div>
+											 
+										 </div>
+										 
+									 </div>
+									 <div class="col-sm-12 col-lg-4">
+										 <div class="card" style="width: 300px;">
+											 <img src="{% static 'mindnote/img/download.jpg' %}" class="card-img-top">
+											 <div class="card-body">
+												 <h4 class="card-title">Python</h4>
+												 <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates ea nisi eveniet facere amet delectus porro cumque, provident voluptatem eum!</p>
+												 <button type="button" class="btn btn-warning">Read More</button>
+												 
+											 </div>
+											 
+										 </div>
+										 
+									 </div>
+									 
+								 </div>
+								 
+							 </div>
+	
+							
+						</div>
+						
+					</div>
+					<a href="#inam" class="carousel-control-prev" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a href="#inam" class="carousel-control-next" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+
+	{% endblock %}	
+	
+
+	

@@ -1,0 +1,122 @@
+{% load static %}
+{% load embed_video_tags %}
+{% load crispy_forms_tags %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+	<title>Hello, world!</title>
+	<style type="text/css">
+      .jumbotron{
+		  
+		  margin-top: 20px;
+		  margin-left: 40px;
+		  margin-right: 40px;
+		  background-size: cover;
+		  
+		  color:white;
+		  background-color: #d4edda;
+		  color:#030804;
+		  
+	  }
+	  .navbar{
+		  
+		  margin-left: 20px;
+		  margin-right: 20px;
+      margin-top: 20px;
+		  
+		  
+	  }
+    #c{
+        margin-left: 40px;
+		  
+          margin-top: 20px;
+		  margin-bottom:20px;
+      }
+		
+	  
+	  .alert{
+      background-color: #d4edda;
+		  color:#030804;
+		  border-radius: 20px;
+		  
+		  margin-left : 40px;
+		  margin-right  : 40px;
+		  margin-top : 30px;
+		  margin-bottom :30px;
+	  }
+        
+      
+		
+	  </style>
+  </head>
+  <body>
+	  
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="{% url "homepage" %}">E-learning</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="{% url "homepage" %}">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="{% url "courses" %}">Courses</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url "formpage" %}">Doubts</a>
+				  </li>
+				
+				
+			  </ul>
+			  
+			</div>
+		  </nav>
+	
+	  
+	
+	  
+	  
+										 
+									 
+									 
+						
+									
+									 
+      {% block body %} {% endblock %}
+
+
+	
+	
+
+	<div class="alert alert-success" role="alert">
+		<h4 class="alert-heading">About Us</h4>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, dolorem? Molestias porro rerum repellat, error exercitationem omnis, adipisci, obcaecati veniam placeat dignissimos voluptas voluptate deserunt ab ipsum autem. Rerum, quo quam. Quas doloribus rerum quam, laborum, ipsa cum esse sed placeat nesciunt, fugiat beatae perspiciatis. Molestiae rem nesciunt dolor voluptate ipsam id velit nulla itaque veritatis impedit reprehenderit ex cum libero ipsa unde, maiores esse corrupti voluptates consectetur? Reprehenderit consectetur perspiciatis corrupti aliquid qui dolorem rerum necessitatibus esse! Doloribus recusandae voluptate a, ratione dolores magni, iste deleniti modi quo repellendus dignissimos cupiditate possimus expedita sint, perferendis eveniet reiciendis! Sed, labore?</p>
+		<p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+	  </div>
+
+
+	
+	
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

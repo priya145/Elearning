@@ -1,0 +1,17 @@
+{% extends "doubts/homepage.html" %}
+{% load static %}
+{% load embed_video_tags %}
+{% load crispy_forms_tags %}
+{% block body %}
+
+<div id="c">
+    {% for i in obj %}
+     {% video i.video 'small' %}
+    {% endfor %}
+</div>
+{% endblock %}	
+
+
+	
+
+	
